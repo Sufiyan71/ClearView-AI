@@ -263,3 +263,21 @@ Results will be saved to: `./results/[name]/test_latest/`
 
 ---
 
+## Training
+
+### Output and Checkpoints
+
+During training, all model checkpoints and training logs will be saved in the `checkpoints` folder:
+
+```
+checkpoints/
+└── [your_model_name]/
+    ├── latest_net_G_A.pth      # Generator A checkpoint
+    ├── latest_net_G_B.pth      # Generator B checkpoint
+    ├── latest_net_D_A.pth      # Discriminator A checkpoint
+    ├── latest_net_D_B.pth      # Discriminator B checkpoint
+    ├── loss_log.txt            # Training loss logs
+    ├── train_opt.txt           # Training options/parameters
+    └── web/                    # HTML visualization files
+        └── images/             # Training progress images
+```
